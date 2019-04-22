@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/placeholder" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+                android:text="@string/av_activity_voted_name_title"
+                android:textColor="@color/word_Gray" />
+
+            <TextView
+                android:id="@+id/tv_ap_activity_detail_voted_name"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="曹鹏飞"
+                android:textColor="@color/word_Gray" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+
+                android:text="@string/av_activity_voted_number_title"
+                android:textColor="@color/word_Gray" />
+
+            <TextView
+                android:id="@+id/tv_ap__activity_detail_voted_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="50票"
+                android:layout_gravity="center"
+
+                android:textColor="@color/word_Gray" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_ap_activity_detail_good"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/good"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <TextView
+        android:id="@+id/tv_ap_activity_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_name"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:id="@+id/tv_ap_activity_begin_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_begin_time"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="至"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.4"
+        android:textSize="14dp"
+        />
+    <TextView
+        android:id="@+id/tv_ap_activity_end_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_end_time"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18dp"
+
+        />
+
+</LinearLayout>

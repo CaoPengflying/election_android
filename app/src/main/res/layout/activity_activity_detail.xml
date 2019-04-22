@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--头部信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/policebule"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/iv_av_activity_detail_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/TextTittleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/av_activity_detail_name" />
+    </RelativeLayout>
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_Gray_light" />
+    <!--活动内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:textColor="@color/word_Gray"
+            android:gravity="center"
+                android:text="@string/activity_name_title" />
+
+            <TextView
+                android:id="@+id/tv_av_activity_detail_activity_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:textColor="@color/word_Gray"
+
+                android:gravity="center"
+                android:text="曹鹏飞" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/word_Gray"
+
+                android:gravity="center"
+                android:text="@string/activity_begin_time_title" />
+
+            <TextView
+                android:id="@+id/tv_av_activity_detail_begin_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/word_Gray"
+
+                android:gravity="center"
+                android:text="@string/activity_begin_time" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/word_Gray"
+
+                android:gravity="center"
+                android:text="@string/activity_end_time_title" />
+            <TextView
+                android:id="@+id/tv_av_activity_detail_end_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/word_Gray"
+
+                android:gravity="center"
+                android:text="@string/activity_end_time" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/word_Gray"
+
+                android:text="@string/activity_create_user_name_title" />
+
+            <TextView
+                android:id="@+id/tv_av_activity_detail_create_user_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/word_Gray"
+
+                android:text="曹鹏飞" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/word_Gray"
+
+                android:text="@string/activity_grade_title" />
+            <TextView
+                android:id="@+id/tv_av_activity_detail_grade_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/word_Gray"
+
+                android:text="@string/activity_end_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_av_detail_vode_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
